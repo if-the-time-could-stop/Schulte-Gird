@@ -50,7 +50,7 @@ try:
                 k=1
                 for i in range(line):
                     for j in range(col):
-                        random.seed(seed)
+                        random.seed(seed-k)
                         num=random.randint(0,line*col-k)
                         det[i][j]=sou[num]
                         del sou[num]
